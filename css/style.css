@@ -1,118 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #DAE3E9;
-}
-
-.clearfix {
-    clear: both;
-}
-
-.row {
-    width: 80%;
-    margin: auto;
-    height: 500px;
-    background: white;
-    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.562);
-}
-
-.top--bar {
-    background: #128cad;
-    height: 40px;
-    position: fixed;
-    top: 0;
-    width: 80%;
-}
-
-.top--bar a {
-    text-decoration: none;
-    color: white;
-    padding: 0 6px;
-    margin-left: 20px;
-    font-size: 12px;
-    line-height: 40px;
-}
-
-.top--bar a:hover {
-    color: #FF9900;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 80%;
-    top: 40px;
-    background: white;
-}
-
-.logo a {
-    height: 70px;
-    display: block;
-}
-
-.logo a img {
-    height: 100%;
-}
-
-nav {
-    /* border: 1px solid;  */
-    width: 100%;
-}
-
- nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    text-transform: uppercase;
-}
-
- nav ul li {
-    display: inline;
-    padding: 20px;
-}
-
-nav ul li:hover {
-    background: #FF9900;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding-bottom: 4px;
-}
-
-nav ul li a:hover {
-    color: white;
-    border-bottom: 2px solid white;
-}
-
-nav ul li:last-child {
-    padding-right: 2px;
-}
 
 .slider {
-    width: 100%;
+    width: 80%;
     padding: 20px;
-    margin-top: 110px;
+    height: 400px;
+    margin: auto;
+    background: white;
+    margin-top: 150px;
+    border: 1px solid white;
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.562);
 }
 
 .img-container  {
     width: 100%;
-    height: 666px;
+    height: 350px;
 }
 
 .img-container img {
     width: 100%;
-    height: 69%;
+    height: 100%;;
 }
 
 .about {
@@ -146,13 +51,20 @@ nav ul li:last-child {
 }
 
 .left--content ul {
-    list-style: none;
-    
+    list-style: disc;
+    color: #8438ee;
 }
 
 .left--content ul li {
     font-size: 0.9rem;
+    
 }
+
+.left--content ul li a {
+    text-decoration: none;
+    color: #8438ee;
+}
+
 
 .right--content {
     width: 80%;
@@ -182,6 +94,7 @@ nav ul li:last-child {
     /* border: 2px solid; */
     margin-bottom: 34px;
     position: relative;
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.562);
 }
 
 .products .title {
@@ -201,21 +114,22 @@ nav ul li:last-child {
 .col:hover {
     /* box-shadow: 0 0 18px rgba(0, 0, 0, 0.308); */
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
-    transition: .5s
+    transition: .5s;
+    cursor: pointer;
 }
 
 .panel-heading {
     background: #FF9900;
     width: 100%;
     height: 40px;
-    
+    line-height: 40px;
 }
 
 .panel-heading-title {
     color: white;
     text-align: center;
     font-size: 1.5rem;
-    padding-top: 1px;
+    
 }
 
 .loan {
@@ -247,15 +161,3 @@ nav ul li:last-child {
     background-repeat: no-repeat;
 }
 
-.footer {
-    width: 100%;
-    height: 60px;
-    background: #006DA2;
-}
-
-.footer p{
-    text-align: center;
-    color: white;
-    font-size: .9rem;
-    line-height: 60px;
-}
